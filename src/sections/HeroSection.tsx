@@ -35,7 +35,7 @@ export default function HeroSection() {
             >
                 AI Thumbnail Generator for your <span className="move-gradient px-3 rounded-xl text-nowrap">Videos.</span>
             </motion.h1>
-            <motion.p className="text-base text-center text-slate-200 max-w-lg mt-6"
+            <motion.p className="text- text-base text-center text-slate-200 max-w-lg mt-6"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -54,6 +54,7 @@ export default function HeroSection() {
                 <button className="flex items-center gap-2 border border-pink-900 hover:bg-pink-950/50 transition rounded-full px-6 h-11">
                     <VideoIcon strokeWidth={1} />
                     <span>See how it works</span>
+            
                 </button>
             </motion.div>
 
