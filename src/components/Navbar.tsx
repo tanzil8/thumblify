@@ -1,9 +1,7 @@
 import { MenuIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { navlinks } from "../data/navlinks";
-import type { INavLink } from "../types";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +37,7 @@ export default function Navbar() {
                     </Link>
                    
                 </div>
-n
+
                 <button className="hidden md:block px-6 py-2.5 bg-pink-600 hover:bg-pink-700 active:scale-95 transition-all rounded-full">
                   Get Started
                 </button>
@@ -49,11 +47,19 @@ n
             </motion.nav>
 
             <div className={`fixed inset-0 z-100 bg-black/40 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-400 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
-                {navlinks.map((link: INavLink) => (
-                    <NavLink key={link.name} to={link.href} onClick={() => setIsOpen(false)}>
-                        {link.name}
-                    </NavLink>
-                ))}
+                 <Link to='/' >
+                    Home
+                    </Link>
+                    <Link to='/' >
+                    Generate
+                    </Link>
+                    <Link to='/' >
+                    My Generations
+                    </Link>
+                    <Link to='/' >
+                    My Contact
+                    </Link>
+
                 <button onClick={() => setIsOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-pink-600 hover:bg-pink-700 transition text-white rounded-md flex">
                     <XIcon />
                 </button>
