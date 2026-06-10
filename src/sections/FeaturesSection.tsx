@@ -38,8 +38,7 @@ export default function FeaturesSection() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    PrebuiltUI helps you build faster by transforming your design vision into fully functional, production-ready UI components.
-                </motion.p>
+                
                 <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-10">
                     <motion.div className="md:col-span-2"
                         initial={{ y: 150, opacity: 0 }}
