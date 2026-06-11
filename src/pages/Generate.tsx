@@ -1,9 +1,10 @@
+import SoftBackdrop from "../components/SoftBackdrop"
 
 const Generate = () => {
   return (
-    <div>
-      hi
-    </div>
+   <>
+   <SoftBackdrop/>
+   </>
   )
 }
 

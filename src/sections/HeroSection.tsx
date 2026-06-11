@@ -24,7 +24,7 @@ export default function HeroSection() {
                 </span>
                 <p className="flex items-center gap-1">
                     <span>Generate you first thumbnail for free </span>
-                    <ChevronRightIcon size={16} className="group-hover:translate-x-0.5 transition duration-300" />
+                   
                 </p>
             </motion.a>
             <motion.h1 className="text-5xl/17 md:text-6xl/21 font-medium max-w-3xl text-center"
@@ -44,11 +44,7 @@ export default function HeroSection() {
                 Stop wasting hours on design. Get high-converting thumbnails in seconds with our advanced AI.</motion.p>
             <motion.div className="flex items-center gap-4 mt-8"
                 initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
-            >
-                <button className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-7 h-11">
+               
                    Generate now
                 </button>
                 <button className="flex items-center gap-2 border border-pink-900 hover:bg-pink-950/50 transition rounded-full px-6 h-11">
