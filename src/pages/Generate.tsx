@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import SoftBackdrop from "../components/SoftBackdrop";
 import { useState } from "react";
-import type { IThumbnail } from "../assets/assets";
+import { aspectRatios, type IThumbnail } from "../assets/assets";
 
 const Generate = () => {
   const { id } = useParams();
@@ -48,6 +48,18 @@ const Generate = () => {
                       </span>
                     </div>
                   </div>
+
+                {/* {aspectRatioSelector} */}
+                {/* {StyleSelector} */}
+                {/* {ColorSchemeSelector} */}
+                {/* {DETAILS} */}
+                <div className="space-y-2">
+                  <label>
+                  Additional Prompts <span>(optional)</span>
+                  </label>
+                </div>
+
+
                 </div>
                 {/* {Button} */}
                 {!id && (
